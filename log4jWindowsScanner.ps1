@@ -46,7 +46,7 @@ Foreach ($i in $MachineList)
 {
     Write-Output $i
     try
-    {
+    { #if added only for show how use the credentials method
         if($i.name -eq "Machine 1") #add name of machine with other credentials
         {
             $username = "Username"
@@ -61,6 +61,7 @@ Foreach ($i in $MachineList)
             $cred = [pscredential]::new($username,$Password)
             Invoke-Command -ComputerName $i -credential $cred -ScriptBlock $command 
         }
+        #this section is the default basic execution
         else{
             Invoke-Command -ComputerName $i -ScriptBlock $command  
         }
