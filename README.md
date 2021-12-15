@@ -47,9 +47,9 @@ SRVService
 I am implementing new functions including requesting general credentials to access machines and A.D.
 Actually, inside the script, you can find the section for use the function with others credentials.**
 
-$username = "Username"
-$Password = ConvertTo-SecureString -String "Password" -AsPlainText -Force
-$cred = [pscredential]::new($username,$Password)
-Invoke-Command -ComputerName $i -credential $cred -ScriptBlock $command 
+$username = "Username"  
+$Password = ConvertTo-SecureString -String "Password" -AsPlainText -Force  
+$cred = [pscredential]::new($username,$Password)  
+Invoke-Command -ComputerName $i -credential $cred -ScriptBlock $command  
 
 **Feel free to participate, modify and improve this script**
