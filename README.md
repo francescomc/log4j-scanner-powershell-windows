@@ -22,13 +22,24 @@ c:\Program Files\..\..\..\log4j-core-2.13.3.jar
 
 ## Prerequisites
 
-1 - Copy al files inside any folder over a machine in your domain (tipically a service machine)
-2 - I suggest to Launch Powershell Ise in Administrator mode.
-3 - for the moment it is not possible to specify the access credentials so i suggest you to launch this script in Domain admin context or another user which has enough permissions for access to remote machines.
+1 - Copy al files inside any folder over a machine in your domain (tipically a service machine)  
+2 - I suggest to Launch Powershell Ise in Administrator mode.  
+3 - for the moment it is not possible to specify the access credentials so i suggest you to launch this script in Domain admin context or another user which has enough permissions for access to remote machines.  
+4 - The machine used for launching the script need to have powershell script execution allowed.
 
 
 ## Usage
-Launch the script. The console ask if you want
+Launch the script. The console ask if you want discovery the machines with active directory.
+If you answer yes the script get the Machines from A.D.
+If you answer no, the script get the machines from the includedmachines.txt file.
+
+You can populate the includedmachines.txt and excludedmachines.txt with list like thisPc-01
+Server-02
+SRV-EMAIL
+SRVService
+
+
+**KEEP ATTENTION: if you populate the file excludedmachines.txt, with a list of machines you don't want to scan, this machines will be skipped.
 
 
 ## Notes
