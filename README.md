@@ -39,7 +39,7 @@ SRV-EMAIL
 SRVService
 
 
-**KEEP ATTENTION: if you populate the file excludedmachines.txt, with a list of machines you don't want to scan, this machines will be skipped.
+**KEEP ATTENTION: if you populate the file excludedmachines.txt, with a list of machines you don't want to scan, this machines will be skipped.**
 
 
 ## Notes
